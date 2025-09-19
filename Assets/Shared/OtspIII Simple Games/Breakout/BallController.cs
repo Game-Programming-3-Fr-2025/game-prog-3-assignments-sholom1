@@ -77,6 +77,5 @@ namespace OtspIII.SimpleGames
                 RB.linearVelocity = vel;
             }
         }
-
     }
 }
