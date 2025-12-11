@@ -1,19 +1,16 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Final
 {
     public class Example : MonoBehaviour
     {
-        // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        public void OnInteract(InputAction.CallbackContext context)
         {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            if (context.ReadValueAsButton())
+            {
+                Debug.Log("I interacted with something!!");
+            }
         }
     }
 }
